@@ -36,6 +36,8 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Data dictionary and provenance specification](docs/DATA_DICTIONARY.md)
 - [Statistical analysis plan - draft](docs/STATISTICAL_ANALYSIS_PLAN_DRAFT.md)
 - [Partner laboratory and governance requirements](docs/LAB_PARTNERSHIP.md)
+- [Laboratory partner collaboration brief](docs/PARTNER_BRIEF.md)
+- [Preliminary prior-art search log](docs/PRELIMINARY_LITERATURE_SEARCH_LOG.md)
 - [Evidence register](docs/EVIDENCE_REGISTER.md)
 - [External AI review synthesis](docs/AI_REVIEW_SYNTHESIS.md)
 - [Go/no-go gates](docs/GO_NO_GO_GATES.md)
