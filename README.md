@@ -38,10 +38,15 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Partner laboratory and governance requirements](docs/LAB_PARTNERSHIP.md)
 - [Laboratory partner collaboration brief](docs/PARTNER_BRIEF.md)
 - [Preliminary prior-art search log](docs/PRELIMINARY_LITERATURE_SEARCH_LOG.md)
+- [Prior-art comparison matrix](docs/PRIOR_ART_MATRIX.md)
+- [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
+- [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
 - [Evidence register](docs/EVIDENCE_REGISTER.md)
 - [External AI review synthesis](docs/AI_REVIEW_SYNTHESIS.md)
 - [Go/no-go gates](docs/GO_NO_GO_GATES.md)
 - [Contribution guidance](CONTRIBUTING.md) and [security/data handling](SECURITY.md)
+
+The repository includes two public **research metadata schemas** and a GitHub Actions static documentation check. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
 
 ## Current next step
 

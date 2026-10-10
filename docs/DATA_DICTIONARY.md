@@ -11,7 +11,8 @@ This is a proposed metadata specification, not a clinical inference schema or ac
 | source_run_id / repeat_run_id | Pseudonymous strings | Link originals to relevant downstream measurements |
 | parameter_code, value, unit | String/decimal/string | Preserve original notation and normalized unit separately |
 | parameter_method | Categorical | Site-confirmed measurement/derivation method; do not infer from vendor alone |
-| provenance | Categorical | MEASURED / DERIVED / VALIDATED_ALTERNATIVE / UNRELIABLE / UNAVAILABLE |
+| derivation | Categorical | MEASURED / DERIVED / VALIDATED_ALTERNATIVE / UNDETERMINED; identifies source method, **not** reliability |
+| reliability | Categorical | TRUSTED / UNRELIABLE / UNAVAILABLE / UNCERTAIN; independent of derivation |
 | analyser_flag | String/coded | Exact documented flag or masked code, plus dictionary |
 | specimen_context | Categorical/text | Plasma appearance, appropriate sample characteristics, artifacts |
 | clinical_context_available | Boolean/controlled fields | Only minimally necessary and approved context |

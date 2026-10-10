@@ -12,6 +12,6 @@
 | G7: Public results | Scientific review, patient/IP checks, honest negative results | NOT MET |
 | G8: Any clinical system | Separate regulatory, ethics, clinical validation and authorization | OUT OF SCOPE |
 
-Allowed before G1-G5: literature mapping, draft protocol, non-clinical metadata specifications and collaboration materials. Do not implement clinical decision-making rules or execute patient-data/model experiments as if approved.
+Allowed before G1-G5: literature mapping, draft protocol, non-clinical metadata specifications, static checking of public research files, and collaboration materials. Do not implement clinical decision-making rules or execute patient-data/model experiments as if approved.
 
 Decision ownership: clinical validation by laboratory professionals; ethics/data permissions by relevant authorities; statistical protocol by research methodologist; repository process by maintainers.
