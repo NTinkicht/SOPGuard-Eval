@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOPGuard model-visible case view (no ground truth)",
+  "description": "Research-only contract. Created from authorized information available at the simulated decision point. No labels, later results or restricted identifiers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode_id",
+    "analyser",
+    "sop_descriptor",
+    "source_measurements",
+    "flags",
+    "observations",
+    "not_for_clinical_use"
+  ],
+  "properties": {
+    "episode_id": {
+      "type": "string",
+      "description": "Random research ID only; never original accession ID."
+    },
+    "analyser": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vendor",
+        "model",
+        "software_version"
+      ],
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "software_version": {
+          "type": "string"
+        }
+      }
+    },
+    "sop_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "document_id",
+        "revision"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "passage_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Only passages assigned to the arm at inference; empty for no-SOP arm."
+        }
+      }
+    },
+    "source_measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "raw_value",
+          "raw_unit"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "raw_value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "raw_unit": {
+            "type": "string"
+          },
+          "known_analyser_method": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Only verified as known at time of routine decision, not adjudicator-assigned reliability."
+          }
+        }
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "description"
+        ],
+        "properties": {
+          "category": {
+            "enum": [
+              "SPECIMEN_OBSERVATION",
+              "SMEAR_NOTE",
+              "AVAILABLE_CLINICAL_CONTEXT",
+              "OTHER_PREDECISION"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "not_for_clinical_use": {
+      "const": true
+    }
+  }
+}

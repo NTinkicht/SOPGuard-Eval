@@ -7,7 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMAS = [ROOT / "schemas" / "benchmark_episode.schema.json",
-           ROOT / "schemas" / "research_output.schema.json"]
+           ROOT / "schemas" / "research_output.schema.json",
+           ROOT / "schemas" / "model_view.schema.json"]
 errors = []
 for path in SCHEMAS:
     try:
@@ -18,6 +19,17 @@ for path in SCHEMAS:
         assert obj.get("additionalProperties") is False
     except (OSError, ValueError, AssertionError) as exc:
         errors.append(f"{path.relative_to(ROOT)}: invalid metadata schema: {exc}")
+
+# The inference-time contract must not contain expert-only outcomes or post-action values.
+try:
+    model_view = json.loads((ROOT / "schemas" / "model_view.schema.json").read_text(encoding="utf-8"))
+    forbidden = {"adjudication", "outcome_evidence", "action_taken", "repeat_results",
+                 "reportability_label", "reliability", "allowed_actions"}
+    exposed = set(model_view.get("properties", {}))
+    if exposed & forbidden:
+        errors.append(f"model_view.schema.json exposes reference-only fields: {sorted(exposed & forbidden)}")
+except (OSError, ValueError) as exc:
+    errors.append(f"model view firewall contract could not be checked: {exc}")
 
 # Only local relative .md links; no network, copyrighted SOP crawling or patient data access.
 link = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
