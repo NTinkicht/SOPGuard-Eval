@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOPGuard research-only candidate output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode_id",
+    "arm_id",
+    "proposed_actions",
+    "evidence_refs",
+    "required_verifications",
+    "reason",
+    "not_for_clinical_use"
+  ],
+  "properties": {
+    "episode_id": {
+      "type": "string"
+    },
+    "arm_id": {
+      "enum": [
+        "R",
+        "H",
+        "L0",
+        "L1",
+        "L2",
+        "L3"
+      ]
+    },
+    "proposed_actions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "NO_ACTION",
+          "REANALYZE_PER_SOP",
+          "REQUEST_ALTERNATIVE_MEASUREMENT",
+          "WITHHOLD_OR_RECOLLECT",
+          "REFER_FOR_REVIEW",
+          "REPORT_WITH_CONDITIONS",
+          "ABSTAIN_INSUFFICIENT_EVIDENCE"
+        ]
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sop_version_used": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_verifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reason": {
+      "type": "string"
+    },
+    "not_for_clinical_use": {
+      "const": true
+    },
+    "provisional_research_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "value",
+          "unit",
+          "not_reportable"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "not_reportable": {
+            "const": true
+          },
+          "input_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
