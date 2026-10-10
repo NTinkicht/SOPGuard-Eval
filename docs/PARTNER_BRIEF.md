@@ -31,6 +31,8 @@ A co-designed research protocol, reproducible evaluation method, clinical safety
 
 The public GitHub repository contains no patient data, restricted SOP text or manufacturer manuals. Real data will only be processed in an authorized research environment after formal approval. No cloud LLM will receive patient-derived content unless that exact transfer is approved. Published data may be aggregate, synthetic demonstration-only or controlled-access depending on policy.
 
+See the [draft ethics/data access submission](ETHICS_AND_DATA_ACCESS_TEMPLATE.md) and [authorized feasibility pilot plan](FEASIBILITY_AND_GO_NOGO_PLAN.md) for the material that would need institutional completion.
+
 ## Proposed collaboration sequence
 
 Scoping discussion → access/feasibility review → ethics and data-use approval → clinician-owned adjudication charter → pilot and sample-size determination → pre-registration → locked retrospective benchmark → joint interpretation/publication.
