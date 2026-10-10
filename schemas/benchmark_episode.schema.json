@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOPGuard research episode (restricted environment only)",
+  "description": "Schema for institution-approved episodes. Structure is not clinical validation; do not commit populated patient episodes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode_id",
+    "site_code",
+    "analyser",
+    "sop",
+    "measurements",
+    "evidence",
+    "adjudication"
+  ],
+  "properties": {
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "site_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "analyser": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vendor",
+        "model",
+        "software_version"
+      ],
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "software_version": {
+          "type": "string"
+        }
+      }
+    },
+    "sop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "document_id",
+        "revision"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "effective_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "source_run",
+          "raw_value",
+          "raw_unit",
+          "derivation",
+          "reliability"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "source_run": {
+            "type": "string"
+          },
+          "raw_value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "raw_unit": {
+            "type": "string"
+          },
+          "canonical_value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "canonical_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "derivation": {
+            "enum": [
+              "MEASURED",
+              "DERIVED",
+              "VALIDATED_ALTERNATIVE",
+              "UNDETERMINED"
+            ]
+          },
+          "reliability": {
+            "enum": [
+              "TRUSTED",
+              "UNRELIABLE",
+              "UNAVAILABLE",
+              "UNCERTAIN"
+            ]
+          },
+          "method_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "category"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "ORIGINAL_RUN",
+              "FOLLOWUP_RUN",
+              "SMEAR",
+              "SPECIMEN_OBSERVATION",
+              "CLINICAL_CONTEXT",
+              "SOP",
+              "OTHER"
+            ]
+          },
+          "available_to_model": {
+            "type": "boolean"
+          },
+          "valid_as_numerical_reference": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "allowed_actions",
+        "required_abstention"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "INDEPENDENT",
+            "CONSENSUS",
+            "UNRESOLVED"
+          ]
+        },
+        "allowed_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_abstention": {
+          "type": "boolean"
+        },
+        "reportable_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "nonreportable_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rationale": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
