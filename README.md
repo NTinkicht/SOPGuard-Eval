@@ -41,6 +41,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Prior-art comparison matrix](docs/PRIOR_ART_MATRIX.md)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
+- [Model-view leakage prevention](docs/MODEL_VIEW_FIREWALL.md)
 - [Evidence register](docs/EVIDENCE_REGISTER.md)
 - [External AI review synthesis](docs/AI_REVIEW_SYNTHESIS.md)
 - [Go/no-go gates](docs/GO_NO_GO_GATES.md)

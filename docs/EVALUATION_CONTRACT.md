@@ -21,7 +21,7 @@ Outputs must identify `sop_version_used` if used, evidence references, which mea
 
 ## Dataset and prediction separation
 
-The case JSON (restricted) must never include adjudication reference labels in a model's prompt payload. Construct separate explicit prompt views stripped of `adjudication`, follow-up evidence when prospective visibility would be improper, and private metadata. No post-correction results leaked into model inputs unless the evaluation task explicitly calls for retrospective interpretation of those results.
+The model input uses a **separate allowlisted schema** at [model_view.schema.json](../schemas/model_view.schema.json), with [firewall guidance](MODEL_VIEW_FIREWALL.md). The case JSON (restricted) must never include adjudication reference labels in a model's prompt payload. Construct separate explicit prompt views stripped of `adjudication`, follow-up evidence when prospective visibility would be improper, and private metadata. No post-correction results leaked into model inputs unless the evaluation task explicitly calls for retrospective interpretation of those results.
 
 ## Scoring
 
