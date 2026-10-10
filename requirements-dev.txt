@@ -1,0 +1,2 @@
+# Public metadata contract validation only; no patient data / clinical model dependencies.
+jsonschema==4.23.0

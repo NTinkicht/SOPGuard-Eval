@@ -39,6 +39,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Laboratory partner collaboration brief](docs/PARTNER_BRIEF.md)
 - [Preliminary prior-art search log](docs/PRELIMINARY_LITERATURE_SEARCH_LOG.md)
 - [Prior-art comparison matrix](docs/PRIOR_ART_MATRIX.md)
+- [Literature search and novelty audit protocol](docs/LITERATURE_SEARCH_PROTOCOL.md)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
 - [Model-view leakage prevention](docs/MODEL_VIEW_FIREWALL.md)

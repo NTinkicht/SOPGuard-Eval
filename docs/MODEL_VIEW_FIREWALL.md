@@ -12,6 +12,8 @@ The restricted full research episode record may contain expert labels, known int
 - [Model-visible input](../schemas/model_view.schema.json) describes only permitted predecision evidence.
 - [Research-only candidate output](../schemas/research_output.schema.json) describes nonclinical suggestions.
 
+The repository's unit tests validate schema rejection of nested forbidden fields using fictional placeholders. They do **not** detect meaning-based leakage hidden in free text, nor prove patient privacy.
+
 A schema alone cannot prevent leakage; an authorized, audited offline preparation process and review against original laboratory timelines are required before any data processing.
 
 ## Before finalizing an inference arm

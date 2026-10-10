@@ -2,6 +2,8 @@
 
 **Search date:** 2026-10-11. **Purpose:** initial background verification only; NOT a complete systematic/scoping review or PRISMA-compliant search. A trained librarian/researcher should validate reproducibility, additional databases, Boolean strings and selection rules before novelty claims are made.
 
+See the [prospective literature search protocol](LITERATURE_SEARCH_PROTOCOL.md) and [blank extraction template](evidence_log_template.csv). The search strategy is not yet systematically executed.
+
 ## Search plan
 
 Starting search sources: general scholarly web indexing used to resolve primary PMC/PubMed/journal pages and publisher standards pages. Future systematic phase must search PubMed/MEDLINE, Scopus and/or Web of Science, IEEE Xplore and ACM Digital Library, with deduplication, screening and a retained audit trail. This log documents only the limited searches actually carried out.
