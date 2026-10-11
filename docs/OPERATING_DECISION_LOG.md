@@ -16,6 +16,8 @@ Maintained for reproducibility and protection against scope drift. Records *team
 
 | 2026-10-11 | D-009 | Completed three bounded PubMed ESearch topical queries and archived counts/translated query manifest; **no screening or deduplication yet** | Public retrieval completed; screening pending | Dual reviewer and librarian-supported full search needed |
 
+| 2026-10-11 | D-010 | Verified deduplication of original 2026-10-11 public PMID artifact: 2,170 occurrences, 2,145 distinct identifiers, 25 B/C overlaps; still no article screening | Exact bibliographic dedup completed | Dual screening and comprehensive literature review pending |
+
 ## Rule for updating
 
 Each significant change to estimand, endpoint, comparator arm, SOP eligibility, patient source, reference-standard definition or data security requires a new decision entry with exact previous wording, rationale, reviewers, effective protocol version, and any required registered amendment. Decisions involving patients or reporting require laboratory/institutional authorization. Never rewrite the log to hide post-hoc changes.

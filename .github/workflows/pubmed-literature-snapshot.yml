@@ -18,6 +18,8 @@ jobs:
           python-version: '3.12'
       - name: Retrieve 3 bounded public PubMed ESearch queries
         run: python scripts/pubmed_search_snapshot.py --output pubmed-search-output
+      - name: Deduplicate public PMID lists and record query overlaps
+        run: python scripts/deduplicate_pubmed_pmids.py --input pubmed-search-output/pmid_export.csv --output pubmed-search-output
       - name: Publish dated manifest and PMID CSV
         uses: actions/upload-artifact@v4
         with:
