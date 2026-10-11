@@ -50,6 +50,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Reproducible PubMed metadata search snapshot](docs/PUBMED_SEARCH_SNAPSHOT.md)
 - [Executed 11 Oct 2026 PubMed retrieval](docs/PUBMED_RUN_2026-10-11.md)
 - [Literature screening handoff](docs/SCREENING_WORKPLAN.md)
+- [PubMed metadata worksheet: screened by humans, no abstract redistribution](docs/PUBMED_METADATA_SCREENING.md)
 - [Public PMID deduplication script](scripts/deduplicate_pubmed_pmids.py)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)

@@ -20,7 +20,9 @@ jobs:
         run: python scripts/pubmed_search_snapshot.py --output pubmed-search-output
       - name: Deduplicate public PMID lists and record query overlaps
         run: python scripts/deduplicate_pubmed_pmids.py --input pubmed-search-output/pmid_export.csv --output pubmed-search-output
-      - name: Publish dated manifest and PMID CSV
+      - name: Build unscreened laboratory-LLM bibliography worksheet
+        run: python scripts/pubmed_metadata_screening.py --input pubmed-search-output/pmid_export.csv --manifest pubmed-search-output/search_manifest.json --output pubmed-search-output
+      - name: Publish dated manifest, PMID lists and unscreened metadata
         uses: actions/upload-artifact@v4
         with:
           name: pubmed-literature-snapshot
