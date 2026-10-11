@@ -10,6 +10,8 @@ Primary estimand: per-episode proportion of safety-critical (S4) recommendation 
 
 Paired comparison of a designated LLM strategy against deterministic baseline R on the same held-out cases. Prespecify the chosen LLM arm, superiority/non-inferiority goal, one- or two-sided alpha, safety margin if applicable, and whether any co-primary outcome is used. Use an exact McNemar procedure for one paired binary decision per case where warranted; adjust for repeated episodes by patient/site and stochastic model runs using appropriate hierarchical or clustered analysis.
 
+A [nonclinical paired-count pilot worksheet](PAIRED_STATISTICS_PILOT_GUIDE.md) is provided to illustrate the estimand; its aggregate arithmetic is not a full clustered/multiplicity-adjusted inferential SAP or a sample-size calculator.
+
 ## Uncertainty and robustness
 
 Provide per-arm Wilson or exact confidence intervals; matched difference intervals where justified; stratify by interference class and true-pathology controls. Present both unadjusted results and planned sensitivity analyses. No assertion of 'zero risk' from zero observed events. Assess adjudicator uncertainty and misclassification.

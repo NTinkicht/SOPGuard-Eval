@@ -10,8 +10,9 @@ Maintained for reproducibility and protection against scope drift. Records *team
 | 2026-10-11 | D-004 | One analyser family initially; no assumption of cross-vendor compatibility | Scope constraint | Partner analyser/version selection |
 | 2026-10-11 | D-005 | Distinguish derivation origin from reliability; model view excludes reference actions/post-decision outcomes | Metadata approach established | Requires real data governance |
 | 2026-10-11 | D-006 | Structured public schemas and fictional-contract tests only; prohibited patient data, deployment and public licensed SOPs | Repository guardrail | G1/G2/G4/G5 unmet |
-
 | 2026-10-11 | D-007 | New Diagnostics 2026, SOP-Maze/SOP-Bench and MedAbstain prior art narrows all broad novelty claims; require CBC interference-specific paired evidence and independent clinical labels | Targeted literature update completed; broader search pending | Librarian and clinical PI review |
+
+| 2026-10-11 | D-008 | Added descriptive paired S4 endpoint arithmetic and exact McNemar demonstration on synthetic aggregate counts; this is not a registered or powered primary analysis | Methodological utility only | Statistician approval and pilot data needed |
 
 ## Rule for updating
 

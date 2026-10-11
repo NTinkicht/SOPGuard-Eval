@@ -35,6 +35,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Reference-standard and adjudication charter](docs/ADJUDICATION_CHARTER.md)
 - [Data dictionary and provenance specification](docs/DATA_DICTIONARY.md)
 - [Statistical analysis plan - draft](docs/STATISTICAL_ANALYSIS_PLAN_DRAFT.md)
+- [Exploratory paired endpoint pilot guide](docs/PAIRED_STATISTICS_PILOT_GUIDE.md)
 - [Partner laboratory and governance requirements](docs/LAB_PARTNERSHIP.md)
 - [Laboratory partner collaboration brief](docs/PARTNER_BRIEF.md)
 - [Ethics and data access draft](docs/ETHICS_AND_DATA_ACCESS_TEMPLATE.md)
