@@ -1,6 +1,6 @@
 # Executed PubMed search snapshot — 2026-10-11
 
-**Status: successful, public ESearch API results from GitHub Actions. This is a targeted bibliographic retrieval, NOT a systematic/scoping review, eligibility screening or unique-study count.**
+**Status: successful, public ESearch API results from GitHub Actions. This is a targeted bibliographic retrieval, NOT a systematic/scoping review, eligibility screening or unique eligible-study count.**
 
 ## Provenance
 
@@ -20,11 +20,11 @@
 | B_LLM_LABORATORY | LLMs/ChatGPT/generative AI in CBC or laboratory medicine | 40 | 40 | Complete within exact ESearch query |
 | C_MEDICAL_LLM_SAFETY | Medical LLMs: safety, abstention, SOP and medical calculations | 403 | 403 | Complete within exact ESearch query |
 
-**Caution:** Raw sum `2170` counts **search occurrences across queries**, not deduplicated unique publications or screened eligible studies. Within each query class, `complete_pmid_export=true`; overlap between classes has not yet been calculated. No title/abstract or full-text eligibility decisions have been made.
+**Verified raw-artifact deduplication (2026-10-11):** The original `pmid_export.csv` was downloaded from workflow artifact #11694389255 and deduplicated by exact PMID. There are **2,170 occurrences, 2,145 unique PMID identifiers and 25 duplicate occurrences**. Intersections: A∩B=0; A∩C=0; B∩C=25; all three=0. Only 15 of B's 40 records were absent from C. The downloaded ZIP's SHA-256 is `3d0812d533c8f270add9d62f5c3d72a436f557103e5af6eb7eea9186e5ebc190`, matching the GitHub Actions upload log. This check counts **unique PubMed identifiers, not screened eligible publications**. We have not retrieved, reviewed or excluded individual abstracts or full texts.
 
 ## What still needs doing before a literature-based novelty claim
 
-1. Retrieve and archive the CSV of public PMIDs from the artifact, then compute and document unique/overlap counts before screening.
+1. Preserve the original PMID CSV artifact and the **verified deduplication counts**. A portable [deduplication script](../scripts/deduplicate_pubmed_pmids.py) and future workflow runs will generate `unique_pmid_export.csv` with provenance memberships.
 2. Assign two qualified reviewers or otherwise transparently report single-screening limitations. Screen titles/abstracts and full texts with reasons and resolution of disagreements.
 3. Add broader database coverage through institutional Scopus/Web of Science and computing literature indexes, plus citation chasing; the three ESearch queries are deliberately scoped and may miss important work.
 4. Independently audit closest 2025–2026 articles at full-text and supplementary-material level, including comparison arms, reference-standard provenance and analyser dependence.
