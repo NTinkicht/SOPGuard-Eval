@@ -45,3 +45,7 @@ See [verified prior-art matrix](PRIOR_ART_MATRIX.md) for study populations, comp
 ## Research positioning revision (2026-10-11)
 
 This targeted public-web update found 2026 laboratory decision-support, SOP-following and clinical abstention benchmarks absent from the four-AI review synthesis. See [targeted source update](TARGETED_LITERATURE_UPDATE_2026-10-11.md). Broad novelty claims must now be rejected; a complete systematic/scoping database search is still not complete.
+
+## Public reproducibility utility
+
+A bounded read-only [PubMed search snapshot](PUBMED_SEARCH_SNAPSHOT.md) can produce an artifact recording ESearch count, translated query and PMIDs for three **targeted** query classes. This does not complete the planned systematic evidence screening or any IFU verification.
