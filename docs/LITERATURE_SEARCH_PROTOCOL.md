@@ -58,6 +58,8 @@ The starred terms, field tags, spelling variants and expression validity must be
 
 Translate the concepts rather than mechanically pasting PubMed `[tiab]` syntax. Maintain one saved, database-specific query per concept, exact interface/version if visible, search date, applied filters and unfiltered/filter counts. Do not invent Scopus/Web of Science hit counts when institutional access is unavailable.
 
+A read-only, executable **targeted** PubMed ESearch snapshot utility is documented in [PUBMED_SEARCH_SNAPSHOT.md](PUBMED_SEARCH_SNAPSHOT.md). Its counts/PMIDs, if a run succeeds, are a public literature discovery audit, **not** this full systematic screening plan.
+
 ## Eligibility and screening
 
 Include: peer-reviewed original clinical evaluation, prospective/retrospective method comparison, consensus guidelines directly defining relevant procedures, formal diagnostic software validation, and healthcare LLM benchmarks with applicable numeric/SOP/abstention endpoints.

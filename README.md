@@ -47,6 +47,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Targeted October 2026 literature update](docs/TARGETED_LITERATURE_UPDATE_2026-10-11.md)
 - [Updated research-positioning decisions](docs/LITERATURE_METHODS_DECISIONS.md)
 - [Literature search and novelty audit protocol](docs/LITERATURE_SEARCH_PROTOCOL.md)
+- [Reproducible PubMed metadata search snapshot](docs/PUBMED_SEARCH_SNAPSHOT.md)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
 - [Model-view leakage prevention](docs/MODEL_VIEW_FIREWALL.md)

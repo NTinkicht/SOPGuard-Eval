@@ -1,0 +1,27 @@
+name: PubMed literature search snapshot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/pubmed-literature-snapshot.yml
+permissions:
+  contents: read
+jobs:
+  pubmed-public-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retrieve 3 bounded public PubMed ESearch queries
+        run: python scripts/pubmed_search_snapshot.py --output pubmed-search-output
+      - name: Publish dated manifest and PMID CSV
+        uses: actions/upload-artifact@v4
+        with:
+          name: pubmed-literature-snapshot
+          path: pubmed-search-output/
+          if-no-files-found: error
+          retention-days: 90

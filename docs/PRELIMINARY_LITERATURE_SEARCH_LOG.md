@@ -4,6 +4,8 @@
 
 See the [executed October 2026 targeted public-web update](TARGETED_LITERATURE_UPDATE_2026-10-11.md) (not a systematic database search). See the [prospective literature search protocol](LITERATURE_SEARCH_PROTOCOL.md) and [blank extraction template](evidence_log_template.csv). The search strategy is not yet systematically executed.
 
+See also [reproducible PubMed ESearch snapshots](PUBMED_SEARCH_SNAPSHOT.md) for date-stamped public PMID/count metadata once GitHub Actions successfully retrieves it. Do not infer counts before such a run.
+
 ## Search plan
 
 Starting search sources: general scholarly web indexing used to resolve primary PMC/PubMed/journal pages and publisher standards pages. Future systematic phase must search PubMed/MEDLINE, Scopus and/or Web of Science, IEEE Xplore and ACM Digital Library, with deduplication, screening and a retained audit trail. This log documents only the limited searches actually carried out.
