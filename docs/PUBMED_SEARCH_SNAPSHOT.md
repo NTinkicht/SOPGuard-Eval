@@ -2,6 +2,8 @@
 
 **Status:** Public bibliography discovery utility. No patient or protected medical data, clinical SOP text or model prompts. This is **not** a systematic/scoping review on its own.
 
+**First successful run:** [2026-10-11 results and counts](PUBMED_RUN_2026-10-11.md), with [archived exact query manifest](../literature/pubmed/2026-10-11/search_manifest.json). Subsequent runs may return different counts as PubMed indexing changes.
+
 ## Why
 
 The prior targeted search identified relevant 2025–2026 CBC, laboratory LLM safety, SOP-reasoning, and abstention literature, but did not collect reproducible PubMed hit counts or PMID lists. A bounded ESearch workflow records the actual NCBI response (counts, query translation, PMIDs, run date and GitHub SHA), without inventing results.

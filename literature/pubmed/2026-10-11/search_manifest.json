@@ -1,0 +1,39 @@
+{
+  "provenance": "PubMed ESearch public bibliographic metadata only",
+  "search_date_utc": "2026-10-11T06:48:42.719930+00:00",
+  "git_sha": "1cf122fd5daa25e8021d09a46e9f5423387a1642",
+  "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+  "query_scope": "targeted, NOT systematic/exhaustive",
+  "unfiltered_search": true,
+  "export_limit_per_query": 2000,
+  "note": "'reported_count' is returned by NCBI on this date. If complete_pmid_export is false, PMID export is TRUNCATED. No deduplication between query classes or dual independent screening performed.",
+  "results": [
+    {
+      "query_id": "A_CBC_INTERFERENCE",
+      "query": "(\"Blood Cell Count\"[MeSH Terms] OR \"complete blood count\"[Title/Abstract] OR \"full blood count\"[Title/Abstract] OR MCHC[Title/Abstract]) AND (interference[Title/Abstract] OR \"cold agglutinin\"[Title/Abstract] OR lipemia[Title/Abstract] OR lipaemia[Title/Abstract] OR hemolysis[Title/Abstract] OR haemolysis[Title/Abstract] OR autoverification[Title/Abstract])",
+      "query_translation": "(\"Blood Cell Count\"[MeSH Terms] OR \"complete blood count\"[Title/Abstract] OR \"full blood count\"[Title/Abstract] OR \"MCHC\"[Title/Abstract]) AND (\"interference\"[Title/Abstract] OR \"cold agglutinin\"[Title/Abstract] OR \"lipemia\"[Title/Abstract] OR \"lipaemia\"[Title/Abstract] OR \"hemolysis\"[Title/Abstract] OR \"haemolysis\"[Title/Abstract] OR \"autoverification\"[Title/Abstract])",
+      "database": "pubmed",
+      "reported_count": 1727,
+      "retrieved_count": 1727,
+      "complete_pmid_export": true
+    },
+    {
+      "query_id": "B_LLM_LABORATORY",
+      "query": "(\"Blood Cell Count\"[MeSH Terms] OR \"complete blood count\"[Title/Abstract] OR \"laboratory medicine\"[Title/Abstract]) AND (\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract] OR ChatGPT[Title/Abstract] OR \"generative AI\"[Title/Abstract])",
+      "query_translation": "(\"Blood Cell Count\"[MeSH Terms] OR \"complete blood count\"[Title/Abstract] OR \"laboratory medicine\"[Title/Abstract]) AND (\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract] OR \"ChatGPT\"[Title/Abstract] OR \"generative AI\"[Title/Abstract])",
+      "database": "pubmed",
+      "reported_count": 40,
+      "retrieved_count": 40,
+      "complete_pmid_export": true
+    },
+    {
+      "query_id": "C_MEDICAL_LLM_SAFETY",
+      "query": "(\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract]) AND (abstention[Title/Abstract] OR \"patient safety\"[Title/Abstract] OR \"standard operating procedure\"[Title/Abstract] OR \"medical calculation\"[Title/Abstract] OR \"laboratory medicine\"[Title/Abstract])",
+      "query_translation": "(\"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract]) AND (\"abstention\"[Title/Abstract] OR \"patient safety\"[Title/Abstract] OR \"standard operating procedure\"[Title/Abstract] OR \"medical calculation\"[Title/Abstract] OR \"laboratory medicine\"[Title/Abstract])",
+      "database": "pubmed",
+      "reported_count": 403,
+      "retrieved_count": 403,
+      "complete_pmid_export": true
+    }
+  ]
+}
