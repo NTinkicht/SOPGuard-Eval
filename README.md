@@ -43,6 +43,8 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Research decisions](docs/OPERATING_DECISION_LOG.md)
 - [Preliminary prior-art search log](docs/PRELIMINARY_LITERATURE_SEARCH_LOG.md)
 - [Prior-art comparison matrix](docs/PRIOR_ART_MATRIX.md)
+- [Targeted October 2026 literature update](docs/TARGETED_LITERATURE_UPDATE_2026-10-11.md)
+- [Updated research-positioning decisions](docs/LITERATURE_METHODS_DECISIONS.md)
 - [Literature search and novelty audit protocol](docs/LITERATURE_SEARCH_PROTOCOL.md)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
@@ -52,11 +54,11 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Go/no-go gates](docs/GO_NO_GO_GATES.md)
 - [Contribution guidance](CONTRIBUTING.md) and [security/data handling](SECURITY.md)
 
-The repository includes two public **research metadata schemas** and a GitHub Actions static documentation check. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
+The repository includes three public **research metadata schemas**, 11 fictional-data contract tests and GitHub Actions static checks. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
 
 ## Current next step
 
-Obtain collaboration with an accredited laboratory and its haematology lead for site-approved, version-controlled SOPs, paired de-identified cases, sample availability estimates, independent adjudicators, and ethics/privacy permissions. Work on background literature, protocol drafts and governance documentation can proceed while that agreement is sought.
+Obtain collaboration with an accredited laboratory and its haematology lead for site-approved, version-controlled SOPs, paired de-identified cases, sample availability estimates, independent adjudicators, and ethics/privacy permissions. Targeted literature discovery has expanded to relevant September 2026 laboratory-safety and July 2026 SOP benchmarks, but a reproducible full database novelty search remains outstanding. Work on bibliography, protocol drafts and governance can proceed while laboratory collaboration is sought.
 
 ## Publication and reproducibility
 

@@ -11,6 +11,8 @@ Maintained for reproducibility and protection against scope drift. Records *team
 | 2026-10-11 | D-005 | Distinguish derivation origin from reliability; model view excludes reference actions/post-decision outcomes | Metadata approach established | Requires real data governance |
 | 2026-10-11 | D-006 | Structured public schemas and fictional-contract tests only; prohibited patient data, deployment and public licensed SOPs | Repository guardrail | G1/G2/G4/G5 unmet |
 
+| 2026-10-11 | D-007 | New Diagnostics 2026, SOP-Maze/SOP-Bench and MedAbstain prior art narrows all broad novelty claims; require CBC interference-specific paired evidence and independent clinical labels | Targeted literature update completed; broader search pending | Librarian and clinical PI review |
+
 ## Rule for updating
 
 Each significant change to estimand, endpoint, comparator arm, SOP eligibility, patient source, reference-standard definition or data security requires a new decision entry with exact previous wording, rationale, reviewers, effective protocol version, and any required registered amendment. Decisions involving patients or reporting require laboratory/institutional authorization. Never rewrite the log to hide post-hoc changes.
