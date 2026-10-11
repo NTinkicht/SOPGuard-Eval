@@ -1,46 +1,39 @@
-# SOPGuard-Eval: collaboration brief for accredited laboratory partners
+# SOPGuard-Eval — Laboratory research collaboration invitation
 
-**Research-only project concept. No live clinical software or patient-result authorization.**
+**Working study:** *Artefact or Disease? Evaluating LLM safety on analytically invalid complete blood counts*
 
-## Why we are conducting this study
+**Research lead:** Academic investigator in computer science / applied AI at Higher Colleges of Technology, UAE. **Partner institution: to be confirmed.**
 
-Instrument flags, genuine pathology and analytical interferences can complicate whether CBC-derived results can safely be reported. Laboratories have established analyser-specific SOPs, published expert decision trees and middleware workflows. We are **not** proposing to replace them. Instead, we intend to evaluate whether LLMs follow those existing practices safely, especially when results should be withheld or an additional investigation is needed.
+### The research question
 
-## Scientific aim
+When a CBC analyser produces an analytically unreliable result, could an LLM mistakenly interpret the artefact as disease or suggest releasing invalid measurements? We plan an **offline retrospective research study**, comparing one LLM with and without relevant laboratory SOP context. We will compare recommendations against carefully documented laboratory outcomes and independent expert assessment. This is not clinical software and will not affect patient care.
 
-An independent safety evaluation will compare deterministic SOP rules with several LLM configurations and qualified biomedical scientists on retrospective CBC interference episodes. The proposed primary endpoint is the percentage of episodes containing at least one safety-critical recommendation error. Cases would include original instrument values and follow-up actions/results **where available and appropriate**, with independent specialist adjudication.
+### Proposed first study
 
-## Proposed initial scope
+One partner laboratory, **one analyser family**, initially focusing on one or two interference pathways supported by available evidence (potentially cold agglutination or lipaemia). We also require genuine-pathology mimics and non-interfered controls. The laboratory's current rules and historical actions may serve as descriptive comparators, not assumed ground truth. The study design and case number will be finalized together *after feasibility review*.
 
-One analyzer family selected by the partner, ideally covering investigated cold agglutination and lipaemia, supplemented by genuine-pathology negative controls, unresolved cases and other locally relevant safety branches. A secondary laboratory is optional for later external validation. No vendor-specific or correction procedure is assumed in advance.
+### What we are asking for now
 
-## What we would request from the laboratory
+**A 30-minute scoping meeting**, with the laboratory haematology section lead or senior biomedical scientist, to discuss:
 
-1. A named haematology lead and institutional research liaison.
-2. Identification of instrument model/software and applicable, currently approved laboratory SOPs, with terms governing permitted use of manufacturer instructions.
-3. A feasibility assessment of retained CBC investigation episodes, including original/repeat values, recorded intervention, flags, exported alternative parameters, plasma/smear observations and specimen metadata.
-4. Two or three qualified adjudicators independent from rule authorship, plus a method for documenting unresolved cases.
-5. Assistance obtaining ethics approval or a waiver, legal data-use agreements and secure processing arrangements.
-6. Agreement on authorship/contributions, publication rights, data retention and which abstractions can be openly shared.
+1. Which CBC analyser family/software and interference-handling SOPs are in use.
+2. Whether records of investigations and repeat/corrected results are retained, and approximately how many years are available.
+3. Whether the laboratory would consider an **institutionally authorized aggregate-only feasibility count** (numbers of investigated artefacts, valid follow-ups and genuine-pathology controls).
+4. Whether a laboratory specialist might act as **clinical co-investigator**.
+5. Which institutional ethics, privacy, SOP-permission and data-processing pathways would apply.
 
-## What the partner receives
+**We are not requesting patient records, individual result screenshots, restricted SOP copies, or clinician adjudication work at this stage.**
 
-A co-designed research protocol, reproducible evaluation method, clinical safety/error taxonomy, audited comparison against the partner's verified procedures, and the option to review resulting manuscript findings and allowed rule abstractions. **No promise of a production medical device or validated clinical workflow** is made.
+### If feasibility is confirmed
 
-## Information governance
+Subject to permissions, the team would develop an institutionally approved protocol and reference evidence, then engage **two independent qualified haematology biomedical-scientist adjudicators** for the eventual retrospective study. All case-level work would occur only in an approved environment and after the required formal approvals. No patient-derived data would go to GitHub or unapproved AI/cloud services.
 
-The public GitHub repository contains no patient data, restricted SOP text or manufacturer manuals. Real data will only be processed in an authorized research environment after formal approval. No cloud LLM will receive patient-derived content unless that exact transfer is approved. Published data may be aggregate, synthetic demonstration-only or controlled-access depending on policy.
+### Value to the laboratory
 
-See the [draft ethics/data access submission](ETHICS_AND_DATA_ACCESS_TEMPLATE.md) and [authorized feasibility pilot plan](FEASIBILITY_AND_GO_NOGO_PLAN.md) for the material that would need institutional completion.
+Opportunity for an academically co-designed study of laboratory-result interpretation safety, a jointly reviewed summary of findings, and appropriate scholarly recognition for substantial contributions. Authorship and institutional requirements would be agreed in advance. There is **no claim of existing partnership**, funded clinical service or validated clinical intervention.
 
-## Proposed collaboration sequence
+**Next step requested:** A brief exploratory discussion to assess whether the case records, expert support and governance route make a collaborative study feasible.
 
-Scoping discussion → access/feasibility review → ethics and data-use approval → clinician-owned adjudication charter → pilot and sample-size determination → pre-registration → locked retrospective benchmark → joint interpretation/publication.
+**Project:** https://github.com/NTinkicht/SOPGuard-Eval
 
-## Scientific references
-
-- GFHC raised-MCHC review (2025): https://pmc.ncbi.nlm.nih.gov/articles/PMC12426809/
-- XN-10 interference flowchart evaluation (2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC9804823/
-- TRIPOD-LLM reporting guidance (2025): https://www.nature.com/articles/s41591-024-03425-5
-
-Contact and institutional details can be added once formally agreed; this brief intentionally does not identify or imply an existing partner.
+*Research-only invitation, 11 October 2026. No patient-data access has been requested or authorized.*

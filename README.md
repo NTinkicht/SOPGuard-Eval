@@ -1,74 +1,47 @@
 # SOPGuard-Eval
 
-**A paired-outcome research benchmark for evaluating LLM safety, SOP adherence, numerical validity and appropriate abstention in complete blood count (CBC) interference management.**
+**Artefact or Disease? Safety of Large Language Models Interpreting Analytically Invalid Complete Blood Counts**
 
-**Status: protocol development / NOT FOR CLINICAL USE.** This public repository does not contain patient data, approved laboratory SOPs, clinical software, or validated rules.
+**Current status: STUDY DESIGN / NOT FOR CLINICAL USE (11 October 2026).** This public project contains no patient data, approved laboratory SOP, institutionally authorized patient-data pipeline or validated clinical tool.
 
-## Research question
+## Scientific purpose
 
-When laboratory specimens produce analytically unreliable CBC measurements, can a language model recommend the correct SOP-constrained response without unsafe calculations, missed verification steps, or suppression of real pathology? How does it compare with a deterministic SOP engine and qualified biomedical scientists?
+Evaluate whether an LLM mistakes analytically invalid complete blood count (CBC) values for disease or recommends unsafe laboratory reporting actions, and whether providing the **applicable SOP in context** reduces these problems without promoting excessive abstention.
 
-We will test rather than assume that an LLM adds value. Correctly declining to calculate or release a result is a valid and often necessary response.
+Following an independent scientific review, the working study is **one laboratory + one analyser family + one or two clinically supported interference classes**, with true-pathology mimics and negative controls. One prespecified model is tested **without (L0) and with (L2) relevant SOP text**, and independently assessed against documented laboratory evidence and qualified expert action labels. Existing laboratory rules and historical actions are descriptive comparators, **not ground truth**. The previous six-arm RAG/tool/human comparison is no longer planned for Study 1.
 
-## Intended study
+**No laboratory partner, case-volume feasibility count, permission to use patient-level data, signed adjudication or preregistration has yet been secured.** There are no empirical CBC safety results.
 
-- Retrospective, paired-outcome evidence: initial result and independently documented post-action result **where appropriate**, plus original flags, specimen metadata and local SOP version.
-- Independent expert adjudication of permitted actions, affected parameters, reporting restrictions and the need to refer, withhold or recollect.
-- Comparator arms: deterministic rules (R), unaided qualified scientists (H, subset), plain LLM (L0), SOP-RAG (L1), oracle-SOP LLM (L2) and tool-constrained LLM (L3).
-- Primary endpoint: proportion of cases with at least one independently adjudicated **safety-critical recommendation error**, with case-level confidence intervals.
-- Secondary endpoints: correct abstention and escalation, SOP adherence, arithmetic and analytic validity, negative-control errors, repeatability, robustness and human factors.
-- First clinical scope: **one partner laboratory, one analyser family**, with clinically justified interference categories selected by the laboratory. A second lab/model is an independent later validation question, not an assumed capability.
+## Current, authoritative documents
 
-## Hard boundaries
+- [Simplified protocol (v0.2, not registered)](docs/PROTOCOL_DRAFT.md)
+- [One-page laboratory collaboration invitation](docs/PARTNER_BRIEF.md)
+- [Preliminary statistical analysis plan (v0.2)](docs/STATISTICAL_ANALYSIS_PLAN_DRAFT.md)
+- [Clinical adjudication and reference standard (v0.2)](docs/ADJUDICATION_CHARTER.md)
+- [Three feasibility go/no-go gates](docs/GO_NO_GO_GATES.md)
+- [Operating research decision log](docs/OPERATING_DECISION_LOG.md)
+- [Literature evidence register](docs/EVIDENCE_REGISTER.md)
+- [Public bibliography run record](docs/PUBMED_METADATA_RUN_2026-10-11.md)
 
-1. No live clinical advice, clinical deployment, instrument/LIS integration, patient-result authorization or specimen correction automation.
-2. No patient-level data, identifiable metadata, licensed IFUs or restricted SOPs may be committed to this public repo.
-3. No clinical-rule implementation is considered validated until the laboratory SOP owner and independent specialists approve it and governance gates are satisfied.
-4. Post-action results support verification but are not automatically sufficient ground truth; incomplete, persistently interfered or unresolvable cases can require abstention.
-5. We do not assume rule-engine perfection or numerical consistency equals analytical validity.
-6. Model reviews by Gemini, Grok, Mistral and Claude are brainstorming inputs, **not** clinical expert review or peer review.
+Earlier study-design and automation documents remain in Git history and the repository for traceability, but **the simplified protocol and documents above take precedence** when they conflict. Do not expand or implement the earlier six-arm design without a new decision and clinical review.
 
-## Research documentation
+## Next action: laboratory feasibility
 
-- [Research charter](docs/RESEARCH_CHARTER.md)
-- [Draft protocol](docs/PROTOCOL_DRAFT.md)
-- [Reference-standard and adjudication charter](docs/ADJUDICATION_CHARTER.md)
-- [Data dictionary and provenance specification](docs/DATA_DICTIONARY.md)
-- [Statistical analysis plan - draft](docs/STATISTICAL_ANALYSIS_PLAN_DRAFT.md)
-- [Exploratory paired endpoint pilot guide](docs/PAIRED_STATISTICS_PILOT_GUIDE.md)
-- [Partner laboratory and governance requirements](docs/LAB_PARTNERSHIP.md)
-- [Laboratory partner collaboration brief](docs/PARTNER_BRIEF.md)
-- [Ethics and data access draft](docs/ETHICS_AND_DATA_ACCESS_TEMPLATE.md)
-- [Blank clinical adjudication form](docs/CLINICAL_REVIEW_FORM_TEMPLATE.md)
-- [Feasibility pilot and go/no-go plan](docs/FEASIBILITY_AND_GO_NOGO_PLAN.md)
-- [Research decisions](docs/OPERATING_DECISION_LOG.md)
-- [Preliminary prior-art search log](docs/PRELIMINARY_LITERATURE_SEARCH_LOG.md)
-- [Prior-art comparison matrix](docs/PRIOR_ART_MATRIX.md)
-- [Targeted October 2026 literature update](docs/TARGETED_LITERATURE_UPDATE_2026-10-11.md)
-- [Updated research-positioning decisions](docs/LITERATURE_METHODS_DECISIONS.md)
-- [Literature search and novelty audit protocol](docs/LITERATURE_SEARCH_PROTOCOL.md)
-- [Reproducible PubMed metadata search snapshot](docs/PUBMED_SEARCH_SNAPSHOT.md)
-- [Executed 11 Oct 2026 PubMed retrieval](docs/PUBMED_RUN_2026-10-11.md)
-- [Literature screening handoff](docs/SCREENING_WORKPLAN.md)
-- [PubMed metadata worksheet: screened by humans, no abstract redistribution](docs/PUBMED_METADATA_SCREENING.md)
-- [Executed PubMed metadata export and review priorities](docs/PUBMED_METADATA_RUN_2026-10-11.md)
-- [Public PMID deduplication script](scripts/deduplicate_pubmed_pmids.py)
-- [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
-- [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
-- [Model-view leakage prevention](docs/MODEL_VIEW_FIREWALL.md)
-- [Evidence register](docs/EVIDENCE_REGISTER.md)
-- [External AI review synthesis](docs/AI_REVIEW_SYNTHESIS.md)
-- [Go/no-go gates](docs/GO_NO_GO_GATES.md)
-- [Contribution guidance](CONTRIBUTING.md) and [security/data handling](SECURITY.md)
+The PI should approach **two or three accredited clinical haematology laboratories** for an initial 30-minute discussion, asking whether relevant cases and documented corrective investigations exist, whether an aggregate feasibility count could be authorized, and whether the lab can identify a clinical co-investigator. Do **not** request patient-level results or restricted SOP copies at this stage. **Partner review checkpoint: 15 January 2027.**
 
-The repository includes three public **research metadata schemas**, offline fictional-data contract tests and GitHub Actions static checks. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
+In parallel, correct the literature-search recall gap (including Spies et al. 2023), and, if useful, conduct a small **published-case research workflow pilot** with source verification and contamination disclosure. No real CBC experimental work before institutional approvals.
 
-## Current next step
+## Safety boundaries
 
-Obtain collaboration with an accredited laboratory and its haematology lead for site-approved, version-controlled SOPs, paired de-identified cases, sample availability estimates, independent adjudicators, and ethics/privacy permissions. Targeted literature discovery has expanded to relevant September 2026 laboratory-safety and July 2026 SOP benchmarks, but a reproducible full database novelty search remains outstanding. Work on bibliography, protocol drafts and governance can proceed while laboratory collaboration is sought.
+- No clinical deployment, result release, integration into instruments/LIS or medical advice.
+- No patient-level data, accessions, restricted SOPs, IFUs, credentials or unapproved clinical outputs in public GitHub, issues, Actions or external AI tools.
+- Laboratory corrective outcomes are evidence but do not independently prove which recommendation was appropriate at the initial decision time (T0).
+- Two qualified independent adjudicators review acceptable actions without seeing arm predictions; missing/unresolved cases are not forced into false certainty.
+- Source, unit and time provenance matter; formula consistency cannot validate an analytically unreliable input.
+- No invented sample sizes, simulated real-patient outcomes, blanket novelty claims or claims of regulatory/clinical approval.
 
-## Publication and reproducibility
+### Technical assets (frozen, research-only)
 
-The initial intended output is **one pre-registered, safety-first comparative study**, not a production clinical application. Plan to log model IDs, versions, prompts, parameters, retrieval corpus hashes and blinded scoring. Follow relevant [TRIPOD-LLM reporting guidance](https://www.nature.com/articles/s41591-024-03425-5); confirm other reporting standards with the eventual journal.
+Existing public metadata schemas, fictional-data tests, PubMed bibliographic scripts and paired-count demonstrations remain available for reproducibility, but **new frameworks, RAG pipelines and clinical algorithms are on hold until feasibility is demonstrated**.
 
-For prior art and authoritative literature see [evidence register](docs/EVIDENCE_REGISTER.md).
+This work aims to produce one credible scientific paper, including a negative result if the data support it. The scope and publication target will be confirmed after clinical and statistical feasibility review.
