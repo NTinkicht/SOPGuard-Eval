@@ -1,0 +1,26 @@
+# SOPGuard-Eval literature screening handoff (not yet executed)
+
+## Scope
+
+The first reproducible PubMed targeted search on 2026-10-11 yielded **1727** CBC-interference hits, **40** LLM-laboratory hits and **403** medical-LLM-safety hits. These counts refer to separate queries, may overlap and are not eligible-study totals. See [executed snapshot](PUBMED_RUN_2026-10-11.md).
+
+## Reviewer workflow
+
+1. Retrieve `pmid_export.csv` from [GitHub run artifact](https://github.com/NTinkicht/SOPGuard-Eval/actions/runs/38119265189/artifacts/11694389255) and archive it with the versioned [manifest](../literature/pubmed/2026-10-11/search_manifest.json).
+2. Deduplicate on PMID across A/B/C and report both total raw occurrences and unique citations. Preserve provenance: a study can appear under multiple queries.
+3. Retrieve title, abstract, journal, year, DOI and publication type through authorized PubMed metadata mechanisms, recording failed or missing fields.
+4. Prioritize the **40 B-query citations** for full overlap with prior laboratory-LLM work, but do not treat them as the only relevant papers.
+5. Predefine inclusion/exclusion taxonomy from [literature protocol](LITERATURE_SEARCH_PROTOCOL.md), including separately tagged consensus guidelines, vendor documents, preprints and primary empirical studies.
+6. Use two independent human screeners when possible; preserve raw screening decisions, resolved conflicts, full-text exclusions and reasons. Never allow an LLM-only judge to certify the clinical evidence base.
+7. Hand-code extraction of device, specimen cases, repeat outcomes, expert adjudication, action-level harm taxonomy, abstention, numerical validation and cross-vendor generalization.
+8. Review newest papers again just before submission; publication indexing and evidence evolve.
+
+## Output table to produce (no fake rows)
+
+Use [blank evidence extraction template](evidence_log_template.csv), plus a screening log with fields: PMID, query_sources, study_title, abstract_available, decision_reviewer_A, decision_reviewer_B, conflict, consensus, full_text_status, exclusion_reason, reviewer_initials and evidence_verification_date.
+
+The current project has **not** completed deduplication or screening. The presence of public PMIDs in an artifact is not evidence of eligibility.
+
+## Clinical boundaries
+
+Do not upload patient data, accession records, local lab SOPs or manufacturer manuals to a screening platform or this public repository. Screens use only lawful public bibliographic metadata and approved licensed documents.

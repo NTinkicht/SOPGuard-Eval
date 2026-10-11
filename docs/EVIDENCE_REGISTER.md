@@ -49,3 +49,7 @@ This targeted public-web update found 2026 laboratory decision-support, SOP-foll
 ## Public reproducibility utility
 
 A bounded read-only [PubMed search snapshot](PUBMED_SEARCH_SNAPSHOT.md) can produce an artifact recording ESearch count, translated query and PMIDs for three **targeted** query classes. This does not complete the planned systematic evidence screening or any IFU verification.
+
+## First reproducible PubMed retrieval (2026-10-11)
+
+The [logged NCBI ESearch run](PUBMED_RUN_2026-10-11.md) successfully returned 1,727 CBC-interference, 40 laboratory LLM and 403 medical-LLM safety *search hits*. All three individual PMID exports were complete relative to their bounded queries. These are **not unique eligible papers or a completed systematic literature review**; screening and other-database coverage remain open. The exact [manifest](../literature/pubmed/2026-10-11/search_manifest.json) is versioned for reproducibility.
