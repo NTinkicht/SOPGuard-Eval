@@ -10,6 +10,8 @@ The source workflow reruns the public searches, then verifies each B-query PMID 
 
 **Important:** The GitHub-run worksheet represents the query performed **in that run**, not necessarily the exact IDs from the October 11 snapshot. PubMed can update and re-index. The original dated manifest remains the historical record.
 
+The [October 11 executed metadata export](PUBMED_METADATA_RUN_2026-10-11.md) produced the expected **40 records**, with **34 abstract-availability flags**, and zero screening decisions.
+
 ## Public worksheet fields
 
 `pmid,pubmed_url,title,journal,year,doi,publication_types,abstract_available,reviewer_a_decision,reviewer_b_decision,conflict,consensus,full_text_status,exclusion_reason,screening_notes`

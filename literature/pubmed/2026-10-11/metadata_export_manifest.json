@@ -1,0 +1,14 @@
+{
+  "source": "Public PubMed EFetch bibliographic metadata",
+  "retrieved_utc": "2026-10-11T07:34:24.203754+00:00",
+  "input_pmid_csv_sha256": "c32eb6385d9b9840710feafabc504666c18f2268450410313fc43721ac784cb0",
+  "input_esearch_manifest_sha256": "de51746b5c674b712a8b4fcf304dc8808a6a562e5456e14077b1bc0180c7b9bd",
+  "query_id": "B_LLM_LABORATORY",
+  "expected_pmids": 40,
+  "exported_rows": 40,
+  "abstract_present_count": 34,
+  "abstract_text_exported": false,
+  "screening_decisions_made": 0,
+  "automated_study_eligibility": false,
+  "note": "Public bibliographic worksheet only, not eligible studies. Abstracts may have publisher copyright; consult original PubMed links. Titles and metadata may require verification and correction by screeners."
+}

@@ -51,6 +51,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Executed 11 Oct 2026 PubMed retrieval](docs/PUBMED_RUN_2026-10-11.md)
 - [Literature screening handoff](docs/SCREENING_WORKPLAN.md)
 - [PubMed metadata worksheet: screened by humans, no abstract redistribution](docs/PUBMED_METADATA_SCREENING.md)
+- [Executed PubMed metadata export and review priorities](docs/PUBMED_METADATA_RUN_2026-10-11.md)
 - [Public PMID deduplication script](scripts/deduplicate_pubmed_pmids.py)
 - [Eligibility and sampling safeguards](docs/ELIGIBILITY_AND_SAMPLING.md)
 - [Evaluation data contracts](docs/EVALUATION_CONTRACT.md)
@@ -60,7 +61,7 @@ We will test rather than assume that an LLM adds value. Correctly declining to c
 - [Go/no-go gates](docs/GO_NO_GO_GATES.md)
 - [Contribution guidance](CONTRIBUTING.md) and [security/data handling](SECURITY.md)
 
-The repository includes three public **research metadata schemas**, 11 fictional-data contract tests and GitHub Actions static checks. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
+The repository includes three public **research metadata schemas**, offline fictional-data contract tests and GitHub Actions static checks. These are not validated medical data models, clinical correction algorithms, or clinical safety tests.
 
 ## Current next step
 
