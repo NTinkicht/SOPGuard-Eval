@@ -17,6 +17,7 @@ Maintained for reproducibility and protection against scope drift. Records *team
 | 2026-10-11 | D-009 | Completed three bounded PubMed ESearch topical queries and archived counts/translated query manifest; **no screening or deduplication yet** | Public retrieval completed; screening pending | Dual reviewer and librarian-supported full search needed |
 
 | 2026-10-11 | D-010 | Verified deduplication of original 2026-10-11 public PMID artifact: 2,170 occurrences, 2,145 distinct identifiers, 25 B/C overlaps; still no article screening | Exact bibliographic dedup completed | Dual screening and comprehensive literature review pending |
+| 2026-10-11 | D-011 | Following the independent scientific review, adopt a **provisional** focused artefact-versus-disease study: one primary model L0, SOP-in-context L2, documented hindsight outcome plus independent T0 action reference; R and historical actions descriptive; drop L1/L3/H from Study 1. Require paired safety and abstention reporting. Prioritize named lab co-investigator and aggregate case feasibility; stop expanding infrastructure. | **Working protocol v0.2 only; not clinically ratified or preregistered** | G1 partner; G2 volume; G3 lawful processing; adjudicator and methodological approval |
 
 ## Rule for updating
 
