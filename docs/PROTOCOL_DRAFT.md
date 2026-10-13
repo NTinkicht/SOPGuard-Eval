@@ -74,7 +74,7 @@ PI (AI methods, software, writing), **one clinical haematology laboratory co-inv
 
 ## Immediate priorities
 
-1. Approach two or three prospective haematology lab partners with the one-page [collaboration brief](PARTNER_BRIEF.md), requesting a conversation, not data.
+1. Send the [direct collaboration brief](PARTNER_BRIEF.md) and [response checklist](LAB_COLLABORATION_ACTIONS.md) to the already receptive laboratory contacts, requesting concrete written feasibility inputs and an authorized aggregate-count pathway, **not an introductory meeting or patient data**.
 2. Rebuild a high-recall targeted literature search and include [Spies et al. (2023)](https://academic.oup.com/jalm/article/8/6/1092/7272601); do not screen all 2,145 PMIDs by default.
 3. Optionally prepare a very small, openly sourced published-case pilot for workflow feasibility; defer new frameworks, data contracts and RAG engineering.
 4. Freeze most repository engineering until partner feasibility and approved processing are clear.
