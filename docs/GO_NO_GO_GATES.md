@@ -16,4 +16,4 @@ No raw patient data, restricted SOPs, licensed instrument documentation or linka
 
 ## Immediate action
 
-**PI:** request exploratory 30-minute meetings with two or three laboratories using the [one-page partner invitation](PARTNER_BRIEF.md). No patient records or restricted SOPs requested before written permissions. Fix the literature search recall problem and stop unrelated software expansion.
+**PI:** send the [direct laboratory collaboration request](PARTNER_BRIEF.md), [response checklist](LAB_COLLABORATION_ACTIONS.md) and [email draft](LAB_COLLABORATION_EMAIL_DRAFT.md) to already receptive laboratories. Request an initial written answer (approximately 7–10 working days if feasible), not an introductory meeting. Laboratories determine local authorization before any aggregate count; patient records and restricted SOPs are not requested. Fix the literature search recall problem and stop unrelated software expansion.

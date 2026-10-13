@@ -1,39 +1,40 @@
-# SOPGuard-Eval — Laboratory research collaboration invitation
+# SOPGuard-Eval — Immediate laboratory collaboration action request
 
-**Working study:** *Artefact or Disease? Evaluating LLM safety on analytically invalid complete blood counts*
+**Working study:** *Artefact or Disease? Safety of Large Language Models Interpreting Analytically Invalid Complete Blood Counts*
 
-**Research lead:** Academic investigator in computer science / applied AI at Higher Colleges of Technology, UAE. **Partner institution: to be confirmed.**
+**Research lead:** Higher Colleges of Technology, UAE (computer science / applied AI).
+**Status:** Research concept for co-design; no clinical approval, patient data, signed partnership, approved SOP access or study results.
 
-### The research question
+## Purpose of the collaboration
 
-When a CBC analyser produces an analytically unreliable result, could an LLM mistakenly interpret the artefact as disease or suggest releasing invalid measurements? We plan an **offline retrospective research study**, comparing one LLM with and without relevant laboratory SOP context. We will compare recommendations against carefully documented laboratory outcomes and independent expert assessment. This is not clinical software and will not affect patient care.
+We aim to evaluate whether an LLM mistakenly treats analytically unreliable CBC results as disease or recommends unsafe reporting, and whether provision of a relevant laboratory SOP changes that risk. Study 1 is intentionally narrow: **one analyser family**, one or two empirically feasible interference pathways, plus genuine-pathology mimics and non-interfered controls. We propose an **offline, retrospective** study with independent clinical reference labels; we will not alter patient care or deploy a clinical decision system.
 
-### Proposed first study
+## What we ask the laboratory to do now
 
-One partner laboratory, **one analyser family**, initially focusing on one or two interference pathways supported by available evidence (potentially cold agglutination or lipaemia). We also require genuine-pathology mimics and non-interfered controls. The laboratory's current rules and historical actions may serve as descriptive comparators, not assumed ground truth. The study design and case number will be finalized together *after feasibility review*.
+**Please reply in writing rather than scheduling an introductory meeting.** The attached [collaboration action checklist](LAB_COLLABORATION_ACTIONS.md) allows a designated representative to return a brief response using information already known to the laboratory.
 
-### What we are asking for now
+1. **Nominate a clinical co-investigator**: the haematology section lead, senior biomedical scientist or clinical laboratory specialist responsible for CBC interference workflow, plus a contact for ethics/data governance.
+2. **Identify the analyser family**: vendor, model, software version (if known), and where relevant existing validated middleware or interference review rules.
+3. **Confirm records and available evidence**: whether original flagged results, documented laboratory corrective investigations, repeat/alternative measurements, final reporting decisions, smear observations, and relevant genuine-pathology control records are retained; include available historical lookback and limitations. Indicate **availability, not actual patient-level information**.
+4. **Indicate potential case categories**: which interference pathways are seen locally, which are documented well enough for an independent reference, and whether genuine mimics/non-interfered controls exist. The laboratory should choose the clinical focus based on what it actually handles; we do not require cold agglutinins and lipaemia specifically.
+5. **Establish the feasibility/ethics path**: say whether an **aggregate-only count**, prepared by authorized laboratory staff, can be approved internally, and identify the committee/privacy office that would authorize any later retrospective data use and AI-model processing.
 
-**A 30-minute scoping meeting**, with the laboratory haematology section lead or senior biomedical scientist, to discuss:
+**Suggested response:** return the brief [action checklist](LAB_COLLABORATION_ACTIONS.md) within approximately **7–10 working days**, or indicate when the laboratory can realistically reply. A written agreement in principle and a named contact can arrive first; do not delay that acknowledgment because counting requires permissions.
 
-1. Which CBC analyser family/software and interference-handling SOPs are in use.
-2. Whether records of investigations and repeat/corrected results are retained, and approximately how many years are available.
-3. Whether the laboratory would consider an **institutionally authorized aggregate-only feasibility count** (numbers of investigated artefacts, valid follow-ups and genuine-pathology controls).
-4. Whether a laboratory specialist might act as **clinical co-investigator**.
-5. Which institutional ethics, privacy, SOP-permission and data-processing pathways would apply.
+## What happens only after authorization
 
-**We are not requesting patient records, individual result screenshots, restricted SOP copies, or clinician adjudication work at this stage.**
+Once the laboratory identifies a lawful route for internal aggregate counting, its staff can prepare counts by selected interference / genuine-mimic categories, valid follow-up evidence, unique patient/episode counts and missingness using the [blank feasibility worksheet](lab_aggregate_feasibility_template.csv). The laboratory determines whether sharing even aggregate counts is permissible.
 
-### If feasibility is confirmed
+If volume and governance support the study, we will jointly define the protocol; confirm SOP use rights, secure processing, ethics approval/waiver and any data-use agreement; recruit **two independent experienced haematology biomedical-scientist adjudicators**; and freeze the analysis before any held-out experiment.
 
-Subject to permissions, the team would develop an institutionally approved protocol and reference evidence, then engage **two independent qualified haematology biomedical-scientist adjudicators** for the eventual retrospective study. All case-level work would occur only in an approved environment and after the required formal approvals. No patient-derived data would go to GitHub or unapproved AI/cloud services.
+## Data protection and workload
 
-### Value to the laboratory
+**Do not email or upload** patient values, accession numbers, identifiable details, screenshots of real CBC results, restricted SOP/IFU copies, case narratives, or record-level extracts. No cloud LLM receives patient-derived data without documented institutional approval. At this stage we request **availability information and authorized aggregate counts only**; expert labeling is **not yet requested**.
 
-Opportunity for an academically co-designed study of laboratory-result interpretation safety, a jointly reviewed summary of findings, and appropriate scholarly recognition for substantial contributions. Authorship and institutional requirements would be agreed in advance. There is **no claim of existing partnership**, funded clinical service or validated clinical intervention.
+The immediate work is an inventory and a short response, not a full data extraction or project implementation. Co-investigators and substantial contributors would have publication roles considered under normal institutional/authorship criteria; participation is subject to institutional agreement.
 
-**Next step requested:** A brief exploratory discussion to assess whether the case records, expert support and governance route make a collaborative study feasible.
+**Please send back:** a named clinical lead, brief analyser/records availability answers, aggregate-count approval pathway, and the proposed next administrative action.
 
-**Project:** https://github.com/NTinkicht/SOPGuard-Eval
+Project and current research protocol: https://github.com/NTinkicht/SOPGuard-Eval
 
-*Research-only invitation, 11 October 2026. No patient-data access has been requested or authorized.*
+*Working document, 13 October 2026. No existing partner agreement is implied.*

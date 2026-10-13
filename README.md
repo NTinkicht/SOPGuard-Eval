@@ -15,7 +15,10 @@ Following an independent scientific review, the working study is **one laborator
 ## Current, authoritative documents
 
 - [Simplified protocol (v0.2, not registered)](docs/PROTOCOL_DRAFT.md)
-- [One-page laboratory collaboration invitation](docs/PARTNER_BRIEF.md)
+- [Direct laboratory collaboration request](docs/PARTNER_BRIEF.md)
+- [Laboratory response checklist](docs/LAB_COLLABORATION_ACTIONS.md)
+- [Ready-to-send collaboration email](docs/LAB_COLLABORATION_EMAIL_DRAFT.md)
+- [Aggregate feasibility template (blank)](docs/lab_aggregate_feasibility_template.csv)
 - [Preliminary statistical analysis plan (v0.2)](docs/STATISTICAL_ANALYSIS_PLAN_DRAFT.md)
 - [Clinical adjudication and reference standard (v0.2)](docs/ADJUDICATION_CHARTER.md)
 - [Three feasibility go/no-go gates](docs/GO_NO_GO_GATES.md)
@@ -27,7 +30,7 @@ Earlier study-design and automation documents remain in Git history and the repo
 
 ## Next action: laboratory feasibility
 
-The PI should approach **two or three accredited clinical haematology laboratories** for an initial 30-minute discussion, asking whether relevant cases and documented corrective investigations exist, whether an aggregate feasibility count could be authorized, and whether the lab can identify a clinical co-investigator. Do **not** request patient-level results or restricted SOP copies at this stage. **Partner review checkpoint: 15 January 2027.**
+The PI already has receptive laboratory contacts and will send the **direct collaboration action request** and checklist to those laboratories. Ask for a written response identifying a clinical co-investigator, analyser/records availability, and the internal permission route for aggregate-only case counting; **an introductory meeting is not a prerequisite**. Request no patient-level results or restricted SOP text at this stage. Do **not** request patient-level results or restricted SOP copies at this stage. **Initial response target: about 7–10 working days if practical; partner feasibility review checkpoint: 15 January 2027.**
 
 In parallel, correct the literature-search recall gap (including Spies et al. 2023), and, if useful, conduct a small **published-case research workflow pilot** with source verification and contamination disclosure. No real CBC experimental work before institutional approvals.
 
